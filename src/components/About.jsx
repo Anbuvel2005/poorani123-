@@ -1,105 +1,60 @@
+import { FaMicrochip, FaLaptopCode } from "react-icons/fa";
 import {
-  FaHtml5,
-  FaCss3Alt,
-  FaJsSquare,
-  FaReact,
-  FaNodeJs,
-  FaGithub,
-  FaGitAlt,
-  FaFigma,
-  FaNode,
-} from "react-icons/fa";
-import {
-  SiTailwindcss,
-  SiBootstrap,
-  SiExpress,
-  SiNextdotjs,
-  SiNetlify,
-  SiMongodb,
-  SiSocketdotio,
-  SiPostman,
-  SiGraphql,
-  SiRedux,
-  SiJsonwebtokens,
-  SiRender,
+  SiArduino,
+  SiRaspberrypi,
+  SiPython,
+  SiCplusplus,
 } from "react-icons/si";
-import { TbBrandFramerMotion } from "react-icons/tb";
-import { DiVisualstudio } from "react-icons/di";
-import { IoLogoNpm, IoLogoVercel } from "react-icons/io5";
 
 const About = () => {
+  const skills = [
+    {
+      name: "Arduino",
+      icon: <SiArduino className="text-[#00979D] w-14 h-14" />,
+    },
+    {
+      name: "Raspberry Pi",
+      icon: <SiRaspberrypi className="text-[#C51A4A] w-14 h-14" />,
+    },
+    { name: "Python", icon: <SiPython className="text-[#3776AB] w-14 h-14" /> },
+    { name: "C++", icon: <SiCplusplus className="text-[#00599C] w-14 h-14" /> },
+    {
+      name: "Microcontrollers",
+      icon: <FaMicrochip className="text-[#FF5733] w-14 h-14" />,
+    },
+    {
+      name: "Embedded Systems",
+      icon: <FaLaptopCode className="text-[#FF8C00] w-14 h-14" />,
+    },
+  ];
+
   return (
-    <div id="about" className="bg-[#ffffff] min-h-screen flex items-center">
-      <div className="max-w-[90%] md:max-w-[75%] mx-auto font-inter space-y-10 py-10">
-        {/* Header */}
-        <h1 className="text-4xl md:text-5xl font-bold text-center text-[#fe5617]">
-          About Me
-        </h1>
+    <div
+      id="about"
+      className="min-h-screen flex flex-col items-center justify-center px-5 py-10"
+      style={{
+        background: "linear-gradient(135deg, #C2FFD8 0%, #FFB6C1 100%)",
+      }}
+    >
+      <h2 className="text-4xl font-bold mb-6 text-gray-900">About Me</h2>
+      <p className="text-lg md:text-xl text-gray-800 text-center max-w-3xl mb-10">
+        I am a core electronics enthusiast with experience in digital
+        electronics, circuit design, and microcontrollers. I am learning
+        embedded systems, IoT, and PCB design. My goal is to work on real-world
+        projects combining hardware and software to innovate in electronics.
+      </p>
 
-        {/* About Me Section */}
-        <p className="text-lg md:text-xl text-gray-700 text-center leading-relaxed">
-          <span className="font-bold text-[#fe5617]">Anbuvel</span>, I am a
-          fresher passionate about becoming a MERN Stack Developer. I have basic
-          knowledge of HTML, CSS, and JavaScript. I am learning MongoDB,
-          Express.js, React.js, and Node.js. I want to build full-stack web
-          applications. I am eager to grow and work on real projects.
-        </p>
-
-        {/* Skills Section */}
-        <div className="space-y-8">
-          <h2 className="text-2xl font-bold text-[#fe5617] text-center">
-            My Skills
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            {/* Skill Icons */}
-            <div className="flex flex-col items-center space-y-2">
-              <FaHtml5 size={40} className="text-[#e34c26]" />
-              <span className="font-bold">HTML5</span>
-            </div>
-            <div className="flex flex-col items-center space-y-2">
-              <FaCss3Alt size={40} className="text-[#264de4]" />
-              <span className="font-bold">CSS3</span>
-            </div>
-            <div className="flex flex-col items-center space-y-2">
-              <FaJsSquare size={40} className="text-[#f7df1e]" />
-              <span className="font-bold">JavaScript</span>
-            </div>
-            <div className="flex flex-col items-center space-y-2">
-              <SiBootstrap size={40} className="text-[#563d7c]" />
-              <span className="font-bold">Bootstrap</span>
-            </div>
-            <div className="flex flex-col items-center space-y-2">
-              <SiTailwindcss size={40} className="text-[#38bdf8]" />
-              <span className="font-bold">Tailwind CSS</span>
-            </div>
-            <div className="flex flex-col items-center space-y-2">
-              <FaReact size={40} className="text-[#61dbfb]" />
-              <span className="font-bold">React.js</span>
-            </div>
-            
-            <div className="flex flex-col items-center space-y-2">
-              <FaGithub size={40} className="text-black" />
-              <span className="font-bold">GitHub</span>
-            </div>
-            <div className="flex flex-col items-center space-y-2">
-              <DiVisualstudio size={40} className="text-[#0078d7]" />
-              <span className="font-bold">VS Code</span>
-            </div>
-            <div className="flex flex-col items-center space-y-2">
-              <SiPostman size={40} className="text-[#ef5b25]" />
-              <span className="font-bold">Postman</span>
-            </div>
-           
-            <div className="flex flex-col items-center space-y-2">
-              <IoLogoVercel size={40} className="text-[#000]" />
-              <span className="font-bold">Vercel</span>
-            </div>
-            <div className="flex flex-col items-center space-y-2">
-              <SiNetlify size={40} className="text-[#00d1b2]" />
-              <span className="font-bold">Netlify</span>
-            </div>
-            </div>
-        </div>
+      <h3 className="text-2xl font-semibold mb-6 text-gray-900">Skills</h3>
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+        {skills.map((skill, index) => (
+          <div
+            key={index}
+            className="flex flex-col items-center gap-3 bg-white p-5 rounded-xl shadow-lg hover:scale-105 transition-transform"
+          >
+            {skill.icon}
+            <span className="font-semibold text-gray-900">{skill.name}</span>
+          </div>
+        ))}
       </div>
     </div>
   );

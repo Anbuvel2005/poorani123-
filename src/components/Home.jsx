@@ -1,21 +1,27 @@
 import Typewriter from "typewriter-effect";
-import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
-import { FaLocationDot } from "react-icons/fa6";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 const Home = () => {
   return (
-    <div id="home" className="bg-[#FFFFFF]">
-      <div className="max-w-[85%] mx-auto font-inter grid grid-cols-1 md:grid-cols-2 gap-8 items-center  min-h-screen">
+    <div
+      id="home"
+      className="bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 min-h-screen flex items-center"
+    >
+      <div className="max-w-[85%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         {/* Left Section */}
-        <div className="order-2 lg:order-1 flex flex-col items-center md:items-start justify-start space-y-5 text-center md:text-left">
-          <h1 className="text-3xl md:text-5xl font-bold">
-            I’m <span className="text-[#fe5617]">Anbuvel</span>
+        <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-5">
+          <h1 className="text-4xl md:text-5xl font-bold text-white">
+            I’m <span className="text-yellow-400">Kalaiselvan</span>
           </h1>
-          <h2 className="text-2xl md:text-3xl font-bold flex gap-2">
-            <span className="text-[#fe5617]">I'm an</span>
+          <h2 className="text-2xl md:text-3xl font-bold flex gap-2 text-white">
+            <span className="text-yellow-400">I'm an</span>
             <Typewriter
               options={{
-                strings: ["Aspiring Developer."],
+                strings: [
+                  "Electronics Engineer.",
+                  "Embedded Systems Enthusiast.",
+                  "IoT Innovator.",
+                ],
                 autoStart: true,
                 loop: true,
                 delay: 50,
@@ -23,42 +29,43 @@ const Home = () => {
               }}
             />
           </h2>
-          {/* About Me */}
-          <p className="text-lg md:text-xl text-gray-700 font-medium">
-            I am a fresher passionate about becoming a MERN Stack Developer. I
-            have basic knowledge of HTML, CSS, and JavaScript. I am learning
-            MongoDB, Express.js, React.js, and Node.js. I want to build
-            full-stack web applications. I am eager to grow and work on real
-            projects.
+          <p className="text-lg md:text-xl text-white font-medium">
+            I am passionate about{" "}
+            <span className="text-yellow-300">Core Electronics</span>, Digital
+            Electronics, Circuit Design, and Microcontrollers. Learning{" "}
+            <span className="text-yellow-300">
+              Embedded Systems, IoT, and PCB Design
+            </span>{" "}
+            for real-world projects.
           </p>
 
-          {/* Contact Information */}
-          <div className=" flex flex-col space-y-3 md:space-y-0 md:flex-row md:gap-6 text-lg md:text-xl font-semibold ">
+          {/* Contact Info */}
+          <div className="flex flex-col md:flex-row md:gap-6 space-y-3 md:space-y-0 text-white">
             <div className="flex items-center gap-3">
-              <FaLocationDot className="text-[#fe5617]" size={20} />
-              <span>Ariyalur</span>
+              <FaMapMarkerAlt size={20} />
+              <span>Vellore</span>
             </div>
             <div className="flex items-center gap-3">
-              <FaPhoneAlt className="text-[#fe5617]" size={20} />
-              <span>6381471504</span>
+              <FaPhoneAlt size={20} />
+              <span>6382283655</span>
             </div>
             <div className="flex items-center gap-3">
-              <FaEnvelope className="text-[#fe5617]" size={20} />
-              <span>anbuvelecetech@gmail.com</span>
+              <FaEnvelope size={20} />
+              <span>kalaiselvanece@gmail.com</span>
             </div>
           </div>
-          {/* Button */}
-          <div className="bg-[#fe5617] px-5 py-2 rounded-2xl font-bold ">
-            <a href="">Download CV</a>
+
+          <div className="bg-yellow-400 px-5 py-2 rounded-2xl font-bold hover:bg-yellow-500 transition-all mt-4">
+            <a href="#">Download CV</a>
           </div>
         </div>
 
         {/* Right Section */}
-        <div className="order-1 lg:order-2 flex justify-end items-center">
+        <div className="flex justify-center md:justify-end">
           <img
-            className="w-[60%] rounded-[50px]"
-            src="./public/WhatsApp Image 2025-07-13 at 15.08.29_94f09d8c.jpg"
+            src="./public/kalai Image 2025-08-27 at 23.21.15_0d993e4b.jpg" // replace with your image path
             alt="Profile"
+            className="w-64 h-72 rounded-md object-cover"
           />
         </div>
       </div>
