@@ -63,7 +63,7 @@ const Home = () => {
         {/* Right Section */}
         <div className="flex justify-center md:justify-end">
           <img
-            src="./public/Screenshot 2025-09-01 122137.png"
+            src="./Profile.png"
             alt="Profile"
             className="w-64 h-72 rounded-md object-cover shadow-lg"
           />

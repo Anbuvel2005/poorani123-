@@ -27,11 +27,11 @@ const Contact = () => {
           </div>
           <div className="flex items-center gap-4 text-blue-100 text-lg">
             <FaEnvelope className="text-yellow-300" size={24} />
-            <span>kalaiselvanece@gmail.com</span>
+            <span>Pooraniece@gmail.com</span>
           </div>
           <div className="flex items-center gap-4 text-blue-100 text-lg">
             <span className="text-yellow-300 font-bold">Location:</span>{" "}
-            Vellore, India
+            Salem, India
           </div>
         </div>
 

@@ -32,7 +32,7 @@ const Footer = () => {
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/your-linkedin"
+            href="https://www.linkedin.com/in/poorani-venkataraman-050256322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-yellow-300 transition-all"
@@ -40,7 +40,7 @@ const Footer = () => {
             <FaLinkedin />
           </a>
           <a
-            href="mailto:kalaiselvanece@gmail.com"
+            href="mailto:pooraniece@gmail.com"
             className="hover:text-yellow-300 transition-all"
           >
             <FaEnvelope />
