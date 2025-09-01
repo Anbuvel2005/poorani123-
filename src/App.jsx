@@ -7,17 +7,17 @@ import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <div className="font-inter">
-      {/* Header with gradient */}
+    <div className="font-inter bg-gradient-to-br from-blue-600 via-blue-800 to-blue-900 text-white">
+      {/* Header */}
       <Header />
 
       {/* Home Section */}
       <Home />
 
-      {/* About Section with gradient */}
+      {/* About Section */}
       <About />
 
-      {/* Contact Section with gradient */}
+      {/* Contact Section */}
       <Contact />
 
       {/* Footer */}
